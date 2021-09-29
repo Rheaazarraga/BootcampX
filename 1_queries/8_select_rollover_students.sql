@@ -1,3 +1,5 @@
+-- -- Query for rollover students - students start date does NOT match cohort's start date ( potentially resulting in the student finishing in a different cohort )
+
 SELECT students.name, cohorts.name, cohorts.start_date as cohort_start_date, students.start_date as student_start_date
 FROM students 
 JOIN cohorts ON cohort_id = cohorts.id
