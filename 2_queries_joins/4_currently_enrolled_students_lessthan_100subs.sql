@@ -6,3 +6,4 @@ GROUP BY students.name
 HAVING count (assignment_submissions.*) < 100;
 
 -- The HAVING clause is evaluated before the SELECT so we can't use the alias total_submissions alias that is created in the SELECT.
+-- HAVING allows us to filter our results based on the result of an aggregate function.
